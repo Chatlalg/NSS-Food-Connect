@@ -26,7 +26,7 @@ export function AppSidebar() {
     
     const handleOnClick = () => {
         sidebar.setOpenMobile(false)
-        console.log("closed sidebar", sidebar.open)
+        // console.log("closed sidebar", sidebar.open)
     }
 
     const handleLogout = async () => {

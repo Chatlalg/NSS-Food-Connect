@@ -1,6 +1,4 @@
 {
   "/(app)/admin/donations/page": "app/(app)/admin/donations/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/auth/login/page": "app/auth/login/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

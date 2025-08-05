@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { adminAPI } from "@/lib/api"
+import { toast } from "sonner"
 
 export default function DonationDetailModal({ donation, onClose }: { donation: any, onClose: () => void }) {
   const [showCredits, setShowCredits] = useState(false)
@@ -12,8 +13,13 @@ export default function DonationDetailModal({ donation, onClose }: { donation: a
     setLoading(true)
     setError("")
     try {
-      await adminAPI.approveDonation({ donationid: donation._id, credits })
-      onClose()
+      const response = await adminAPI.approveDonation({ donationid: donation._id, credits })
+      if (response.statusText === "OK") {
+        toast.success("Donation approved", {
+          description: `${credits} credits assigned!`, richColors: true
+        })
+        onClose()
+      }
     } catch (e) {
       console.error("Failed to approve donation:", e);
       setError("Failed to approve donation");
@@ -23,8 +29,22 @@ export default function DonationDetailModal({ donation, onClose }: { donation: a
   }
 
   const handleReject = async () => {
-    // Optionally implement reject logic
-    onClose()
+    setLoading(true)
+    setError("")
+    try {
+      const response = await adminAPI.rejectDonation({ donationid: donation._id})
+      if (response.statusText === "OK") {
+        toast.message("Donation request rejected successfully", {
+          richColors:true
+        })
+        onClose()
+      }
+    } catch (e) {
+      console.error("Failed to approve donation:", e);
+      setError("Failed to approve donation");
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -58,32 +78,32 @@ export default function DonationDetailModal({ donation, onClose }: { donation: a
           <div className="mt-2">
             <label className="block mb-2 font-bold">Assign Credits</label>
             <div className="flex gap-6 items-center pb-2">
-            <input
-              type="range"
-              min={0}
-              max={10}
-              step={1}
-              value={credits}
-              onChange={e => setCredits(Number(e.target.value))}
-              className="py-1 min-w-90 mb-2"
-              disabled={loading}
-              list="tickmarks"
+              <input
+                type="range"
+                min={0}
+                max={10}
+                step={1}
+                value={credits}
+                onChange={e => setCredits(Number(e.target.value))}
+                className="py-1 min-w-90 mb-2"
+                disabled={loading}
+                list="tickmarks"
               />
-            <datalist id="tickmarks">
-              <option value="0" label="0"></option>
-              <option value="1" label="1"></option>
-              <option value="2" label="2"></option>
-              <option value="3" label="3"></option>
-              <option value="4" label="4"></option>
-              <option value="5" label="5"></option>
-              <option value="6"></option>
-              <option value="7"></option>
-              <option value="8"></option>
-              <option value="9"></option>
-              <option value="10"></option>
-            </datalist>
-            <input type="text" disabled={true} value={credits} className="border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center" size={2}/>
-              </div>
+              <datalist id="tickmarks">
+                <option value="0" label="0"></option>
+                <option value="1" label="1"></option>
+                <option value="2" label="2"></option>
+                <option value="3" label="3"></option>
+                <option value="4" label="4"></option>
+                <option value="5" label="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+              </datalist>
+              <input type="text" disabled={true} value={credits} className="border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center" size={2} />
+            </div>
             <button
               className="bg-green-600 text-white px-4 py-2 rounded w-full"
               onClick={handleApprove}

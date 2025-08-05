@@ -1359,7 +1359,7 @@ function AppSidebar() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleOnClick = ()=>{
         sidebar.setOpenMobile(false);
-        console.log("closed sidebar", sidebar.open);
+    // console.log("closed sidebar", sidebar.open)
     };
     const handleLogout = async ()=>{
         try {

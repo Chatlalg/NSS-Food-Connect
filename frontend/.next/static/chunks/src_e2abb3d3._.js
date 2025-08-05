@@ -200,10 +200,10 @@ const AuthProvider = ({ children })=>{
     const login = (token)=>{
         try {
             const decodedUser = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["decodeUserFromToken"])(token);
-            console.log('AuthProvider: Decoded user from token:', decodedUser);
+            // console.log('AuthProvider: Decoded user from token:', decodedUser);
             if (decodedUser) {
                 setUser(decodedUser);
-                console.log('AuthProvider: User set successfully');
+                // console.log('AuthProvider: User set successfully');
                 return true;
             }
         } catch (error) {
