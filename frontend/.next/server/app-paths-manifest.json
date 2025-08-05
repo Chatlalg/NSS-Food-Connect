@@ -1,8 +1,1 @@
-{
-  "/(app)/admin/donations/page": "app/(app)/admin/donations/page.js",
-  "/(app)/volunteer/donate/page": "app/(app)/volunteer/donate/page.js",
-  "/(app)/volunteer/profile/page": "app/(app)/volunteer/profile/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/auth/login/page": "app/auth/login/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
-}
+{}

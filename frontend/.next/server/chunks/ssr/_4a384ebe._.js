@@ -413,109 +413,6 @@ function DonationDetailModal({ donation, onClose }) {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-// "use client"
-// import ActivityCard, { ActivityCardProps } from "@/components/admin-activity-card"
-// import foodImg from "@/../public/food2.png"
-// const Donations = () => {
-//   const activity_info: ActivityCardProps[] = [
-//     {
-//       _id: "aefaefae",
-//       image: foodImg,
-//       mess: "Madhura mess",
-//       volunteer: "Atharva kuldhar"
-//     },
-//     {
-//       _id: "ae3faefae",
-//       image: foodImg,
-//       mess: "Madhura mess",
-//       volunteer: "Atharva kuldhar"
-//     },
-//     {
-//       _id: "aefa4efae",
-//       image: foodImg,
-//       mess: "Madhura mess",
-//       volunteer: "Atharva kuldhar"
-//     },
-//     {
-//       _id: "ae1faefae",
-//       image: foodImg,
-//       mess: "Madhura mess",
-//       volunteer: "Atharva kuldhar"
-//     },
-//     {
-//       _id: "aefae5fae",
-//       image: foodImg,
-//       mess: "Madhura mess",
-//       volunteer: "Atharva kuldhar"
-//     },
-//   ]
-//   return (
-//     <div className="w-full h-full px-4">
-//       <div className="w-full">
-//         <h1 className="text-center text-3xl font-bold mb-5">Donations</h1>
-//       </div>
-//       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center">
-//         {
-//           activity_info.map((item) => (
-//             <ActivityCard {...item} key={item._id}/>
-//           ))
-//         }
-//       </div>
-//     </div>
-//   )
-// }
-// export default Donations
-// ---------------------------------------------------------------
-// "use client"
-// import { useEffect, useState } from "react"
-// import ActivityCard, { ActivityCardProps } from "@/components/admin-activity-card"
-// import foodImg from "@/../public/food2.png"
-// import { adminAPI } from "@/lib/api"
-// const Donations = () => {
-//   const [donations, setDonations] = useState<ActivityCardProps[]>([])
-//   const [loading, setLoading] = useState(true)
-//   useEffect(() => {
-//     const fetchDonations = async () => {
-//       try {
-//         const res = await adminAPI.getDonations()
-//         // Map backend data to ActivityCardProps
-//         const mapped = (res.donations || []).map((item: any) => ({
-//           _id: item._id,
-//           image: foodImg,
-//           mess: item.messname,
-//           volunteer: item.volunteerid?.name || "Unknown"
-//         }))
-//         setDonations(mapped)
-//       } catch (err) {
-//         setDonations([])
-//       } finally {
-//         setLoading(false)
-//       }
-//     }
-//     fetchDonations()
-//   }, [])
-//   return (
-//     <div className="w-full h-full px-4">
-//       <div className="w-full">
-//         <h1 className="text-center text-3xl font-bold mb-5">Donations</h1>
-//       </div>
-//       {loading ? (
-//         <div className="text-center">Loading...</div>
-//       ) : (
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center">
-//           {donations.length === 0 ? (
-//             <div className="col-span-3 text-center text-gray-500">No donations found</div>
-//           ) : (
-//             donations.map((item) => (
-//               <ActivityCard {...item} key={item._id}/>
-//             ))
-//           )}
-//         </div>
-//       )}
-//     </div>
-//   )
-// }
-// export default Donations
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
@@ -572,12 +469,12 @@ const Donations = ()=>{
                     children: "Donations"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                    lineNumber: 156,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 155,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -585,7 +482,7 @@ const Donations = ()=>{
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 159,
+                lineNumber: 47,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center",
@@ -594,7 +491,7 @@ const Donations = ()=>{
                     children: "No donations found"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                    lineNumber: 163,
+                    lineNumber: 51,
                     columnNumber: 13
                 }, this) : donations.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: ()=>setSelectedDonation(item),
@@ -603,17 +500,17 @@ const Donations = ()=>{
                             ...item
                         }, void 0, false, {
                             fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                            lineNumber: 167,
+                            lineNumber: 55,
                             columnNumber: 17
                         }, this)
                     }, item._id, false, {
                         fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                        lineNumber: 166,
+                        lineNumber: 54,
                         columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 161,
+                lineNumber: 49,
                 columnNumber: 9
             }, this),
             selectedDonation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$donation$2d$detail$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -621,13 +518,13 @@ const Donations = ()=>{
                 onClose: ()=>setSelectedDonation(null)
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 174,
+                lineNumber: 62,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-        lineNumber: 154,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 };
