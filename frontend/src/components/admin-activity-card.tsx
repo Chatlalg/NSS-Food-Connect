@@ -5,9 +5,17 @@ import { StaticImageData } from "next/image";
 
 type ActivityCardProps = {
   _id: string;
-  volunteer: string;
-  mess: string;
   image: StaticImageData;
+  mess: string;
+  volunteer: string;
+  foodtype: string;
+  donationdate: Date;
+  quantity: string;
+  bestbefore: string;
+  category: string;
+  description: string;
+  imgurl: string;
+  status: string;
 }
 
 const ActivityCard = (item: ActivityCardProps) => {

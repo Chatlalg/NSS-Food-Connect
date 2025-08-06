@@ -23,7 +23,7 @@ const ActivityCard = (item)=>{
                 className: "w-full h-48 object-cover"
             }, void 0, false, {
                 fileName: "[project]/src/components/admin-activity-card.tsx",
-                lineNumber: 16,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -37,7 +37,7 @@ const ActivityCard = (item)=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/admin-activity-card.tsx",
-                        lineNumber: 22,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -48,19 +48,19 @@ const ActivityCard = (item)=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/admin-activity-card.tsx",
-                        lineNumber: 25,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/admin-activity-card.tsx",
-                lineNumber: 21,
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/admin-activity-card.tsx",
-        lineNumber: 15,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 };
@@ -589,7 +589,8 @@ const Donations = ()=>{
                         bestbefore: item.bestbefore,
                         category: item.category,
                         description: item.description,
-                        imgurl: item.imgurl
+                        imgurl: item.imgurl,
+                        status: item.status
                     }));
                 setDonations(mapped);
             } catch (err) {
@@ -606,16 +607,16 @@ const Donations = ()=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "text-center text-3xl font-bold mb-5",
-                    children: "Donations"
+                    className: "text-center text-3xl font-bold mb-5 ",
+                    children: "Pending Donations"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                    lineNumber: 44,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 43,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -623,7 +624,7 @@ const Donations = ()=>{
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center",
@@ -632,26 +633,70 @@ const Donations = ()=>{
                     children: "No donations found"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                    lineNumber: 51,
+                    lineNumber: 53,
                     columnNumber: 13
-                }, this) : donations.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                }, this) : donations.map((item)=>item.status === "pending" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: ()=>setSelectedDonation(item),
                         className: "cursor-pointer",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2d$activity$2d$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             ...item
                         }, void 0, false, {
                             fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 17
                         }, this)
                     }, item._id, false, {
                         fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                        lineNumber: 54,
+                        lineNumber: 57,
                         columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 49,
+                lineNumber: 51,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-center text-3xl font-bold text-green-900",
+                children: "Completed Donations"
+            }, void 0, false, {
+                fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this),
+            loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center",
+                children: "Loading..."
+            }, void 0, false, {
+                fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                lineNumber: 66,
+                columnNumber: 9
+            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center",
+                children: donations.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "col-span-3 text-center text-gray-500",
+                    children: "No donations found"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                    lineNumber: 70,
+                    columnNumber: 13
+                }, this) : donations.map((item)=>item.status !== "pending" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        onClick: ()=>setSelectedDonation(item),
+                        className: "cursor-pointer",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2d$activity$2d$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            ...item
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                            lineNumber: 75,
+                            columnNumber: 17
+                        }, this)
+                    }, item._id, false, {
+                        fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                        lineNumber: 74,
+                        columnNumber: 15
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
+                lineNumber: 68,
                 columnNumber: 9
             }, this),
             selectedDonation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$donation$2d$detail$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -659,13 +704,13 @@ const Donations = ()=>{
                 onClose: ()=>setSelectedDonation(null)
             }, void 0, false, {
                 fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-                lineNumber: 62,
+                lineNumber: 82,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(app)/admin/donations/page.tsx",
-        lineNumber: 42,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 };
