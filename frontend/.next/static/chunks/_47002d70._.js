@@ -177,7 +177,7 @@ function DonationDetailModal({ donation, onClose }) {
                     children: "×"
                 }, void 0, false, {
                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -185,7 +185,7 @@ function DonationDetailModal({ donation, onClose }) {
                     children: "Donation Details"
                 }, void 0, false, {
                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -197,28 +197,11 @@ function DonationDetailModal({ donation, onClose }) {
                                     children: "Volunteer Name:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 56,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                donation.volunteer
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 56,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Mess Name:"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 57,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.mess
+                                donation.volunteer
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -228,14 +211,14 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Food Type:"
+                                    children: "Mess Name:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 58,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.foodtype
+                                donation.mess
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -245,14 +228,14 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Date:"
+                                    children: "Food Type:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 59,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.donationdate && new Date(donation.donationdate).toLocaleString()
+                                donation.foodtype
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -262,14 +245,14 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Quantity:"
+                                    children: "Date:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 60,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.quantity
+                                donation.donationdate && new Date(donation.donationdate).toLocaleString()
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -279,14 +262,14 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "To be Consumed Before:"
+                                    children: "Quantity:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 61,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.bestbefore
+                                donation.quantity
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -296,14 +279,14 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Category:"
+                                    children: "To be Consumed Before:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 62,
                                     columnNumber: 16
                                 }, this),
                                 " ",
-                                donation.category
+                                donation.bestbefore
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
@@ -313,10 +296,27 @@ function DonationDetailModal({ donation, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "Description:"
+                                    children: "Category:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
                                     lineNumber: 63,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                donation.category
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/donation-detail-modal.tsx",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                    children: "Description:"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                    lineNumber: 64,
                                     columnNumber: 16
                                 }, this),
                                 " ",
@@ -324,7 +324,7 @@ function DonationDetailModal({ donation, onClose }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 63,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         donation.imgurl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -333,7 +333,7 @@ function DonationDetailModal({ donation, onClose }) {
                                     children: "Photo Proof:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 67,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -344,19 +344,19 @@ function DonationDetailModal({ donation, onClose }) {
                                     className: "rounded mt-2"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 68,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -364,198 +364,209 @@ function DonationDetailModal({ donation, onClose }) {
                     children: error
                 }, void 0, false, {
                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 71,
+                    lineNumber: 72,
                     columnNumber: 19
                 }, this),
-                !showCredits ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex gap-4 mt-6",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-green-500 text-white px-4 py-2 rounded",
-                            onClick: ()=>setShowCredits(true),
-                            children: "Approve"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 74,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-red-500 text-white px-4 py-2 rounded",
-                            onClick: handleReject,
-                            children: "Reject"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 75,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
+                donation.status === "pending" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: !showCredits ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-4 mt-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "bg-green-500 text-white px-4 py-2 rounded",
+                                onClick: ()=>setShowCredits(true),
+                                children: "Approve"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                lineNumber: 78,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "bg-red-500 text-white px-4 py-2 rounded",
+                                onClick: handleReject,
+                                children: "Reject"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                lineNumber: 79,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/donation-detail-modal.tsx",
+                        lineNumber: 77,
+                        columnNumber: 15
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "block mb-2 font-bold",
+                                children: "Assign Credits"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                lineNumber: 83,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex gap-6 items-center pb-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "range",
+                                        min: 0,
+                                        max: 10,
+                                        step: 1,
+                                        value: credits,
+                                        onChange: (e)=>setCredits(Number(e.target.value)),
+                                        className: "py-1 min-w-90 mb-2",
+                                        disabled: loading,
+                                        list: "tickmarks"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                        lineNumber: 85,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("datalist", {
+                                        id: "tickmarks",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "0",
+                                                label: "0"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 97,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "1",
+                                                label: "1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 98,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "2",
+                                                label: "2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 99,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "3",
+                                                label: "3"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 100,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "4",
+                                                label: "4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 101,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "5",
+                                                label: "5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 102,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "6",
+                                                label: "6"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 103,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "7",
+                                                label: "7"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "8",
+                                                label: "8"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 105,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "9",
+                                                label: "9"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "10",
+                                                label: "10"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                                lineNumber: 107,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                        lineNumber: 96,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        disabled: true,
+                                        value: credits,
+                                        className: "border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center",
+                                        size: 2
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                lineNumber: 84,
+                                columnNumber: 17
+                            }, this),
+                            donation.status !== "pending" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "bg-green-600 text-white px-4 py-2 rounded w-full",
+                                onClick: handleApprove,
+                                disabled: loading || credits <= 0,
+                                children: loading ? "Approving..." : "Approve"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/donation-detail-modal.tsx",
+                                lineNumber: 113,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/donation-detail-modal.tsx",
+                        lineNumber: 82,
+                        columnNumber: 15
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 73,
-                    columnNumber: 11
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-2",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                            className: "block mb-2 font-bold",
-                            children: "Assign Credits"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 79,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-6 items-center pb-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "range",
-                                    min: 0,
-                                    max: 10,
-                                    step: 1,
-                                    value: credits,
-                                    onChange: (e)=>setCredits(Number(e.target.value)),
-                                    className: "py-1 min-w-90 mb-2",
-                                    disabled: loading,
-                                    list: "tickmarks"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 81,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("datalist", {
-                                    id: "tickmarks",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "0",
-                                            label: "0"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 93,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "1",
-                                            label: "1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 94,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "2",
-                                            label: "2"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 95,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "3",
-                                            label: "3"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 96,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "4",
-                                            label: "4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 97,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "5",
-                                            label: "5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 98,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "6"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 99,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "7"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 100,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "8"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 101,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "9"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 102,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "10"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                            lineNumber: 103,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 92,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "text",
-                                    disabled: true,
-                                    value: credits,
-                                    className: "border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center",
-                                    size: 2
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/donation-detail-modal.tsx",
-                                    lineNumber: 105,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 80,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-green-600 text-white px-4 py-2 rounded w-full",
-                            onClick: handleApprove,
-                            disabled: loading || credits <= 0,
-                            children: loading ? "Approving..." : "Approve"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/donation-detail-modal.tsx",
-                            lineNumber: 107,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/donation-detail-modal.tsx",
-                    lineNumber: 78,
+                    lineNumber: 75,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/donation-detail-modal.tsx",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/donation-detail-modal.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }

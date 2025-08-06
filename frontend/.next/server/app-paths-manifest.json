@@ -1,11 +1,5 @@
 {
-<<<<<<< HEAD
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
-=======
   "/(app)/admin/donations/page": "app/(app)/admin/donations/page.js",
-  "/(app)/admin/volunteers/page": "app/(app)/admin/volunteers/page.js",
   "/auth/login/page": "app/auth/login/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
->>>>>>> 3df950a6ecd881b2ec975c4a31737bbe3557d997
 }
