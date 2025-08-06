@@ -36,10 +36,10 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const login = (token: string) => {
         try {
             const decodedUser = decodeUserFromToken(token);
-            console.log('AuthProvider: Decoded user from token:', decodedUser);
+            // console.log('AuthProvider: Decoded user from token:', decodedUser);
             if (decodedUser) {
                 setUser(decodedUser);
-                console.log('AuthProvider: User set successfully');
+                // console.log('AuthProvider: User set successfully');
                 return true;
             }
         } catch (error) {

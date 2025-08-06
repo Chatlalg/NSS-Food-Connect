@@ -107,6 +107,14 @@ export const adminAPI = {
       { donationid, credits },
       { withCredentials: true }
     )
+  },
+
+  rejectDonation: async({donationid}:{donationid:string})=>{
+    return await axios.post(
+      `${process.env.NEXT_PUBLIC_API_URL}/admin/reject`,
+      { donationid },
+      { withCredentials: true }
+    )
   }
 };
 

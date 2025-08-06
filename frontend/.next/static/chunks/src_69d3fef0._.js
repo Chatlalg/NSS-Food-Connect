@@ -446,10 +446,10 @@ const SignIn = ()=>{
                     description: response.message[0]
                 });
                 // Get token from cookies and decode user
-                console.log("All cookies:", document.cookie);
+                // console.log("All cookies:", document.cookie)
                 const token = document.cookie.split('; ').find((row)=>row.startsWith('access_token='))?.split('=')[1];
-                console.log("Token found:", token ? "Yes" : "No");
-                console.log("Token value:", token ? token.substring(0, 20) + "..." : "None");
+                // console.log("Token found:", token ? "Yes" : "No")
+                // console.log("Token value:", token ? token.substring(0, 20) + "..." : "None")
                 if (!token) {
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication failed", {
                         description: "Token not found"
@@ -458,7 +458,7 @@ const SignIn = ()=>{
                 }
                 // Login user in context
                 const loginSuccess = login(token);
-                console.log("Login success:", loginSuccess);
+                // console.log("Login success:", loginSuccess)
                 if (!loginSuccess) {
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication failed", {
                         description: "Invalid token"
@@ -468,15 +468,15 @@ const SignIn = ()=>{
                 // Decode token and redirect
                 try {
                     const decodedUser = JSON.parse(atob(token.split('.')[1]));
-                    console.log("Decoded user:", decodedUser);
+                    // console.log("Decoded user:", decodedUser)
                     const redirectPath = decodedUser.userType === 0 ? "/admin/donations" : "/volunteer/donate";
-                    console.log("Redirecting to:", redirectPath);
+                    // console.log("Redirecting to:", redirectPath)
                     // Use push instead of replace for better navigation
                     router.push(redirectPath);
                     // Fallback redirect after a short delay
                     setTimeout(()=>{
                         if (window.location.pathname === '/auth/login') {
-                            console.log("Fallback redirect triggered");
+                            // console.log("Fallback redirect triggered")
                             window.location.href = redirectPath;
                         }
                     }, 1000);

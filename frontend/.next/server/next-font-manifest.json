@@ -1,6 +1,10 @@
 {
   "app": {
+<<<<<<< HEAD
     "[project]/src/app/page": [
+=======
+    "[project]/src/app/(app)/admin/donations/page": [
+>>>>>>> 3df950a6ecd881b2ec975c4a31737bbe3557d997
       "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2",
       "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2"
     ]

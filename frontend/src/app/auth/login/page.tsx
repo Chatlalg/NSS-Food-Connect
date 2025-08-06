@@ -42,14 +42,14 @@ const SignIn = () => {
         })
         
         // Get token from cookies and decode user
-        console.log("All cookies:", document.cookie)
+        // console.log("All cookies:", document.cookie)
         const token = document.cookie
           .split('; ')
           .find((row) => row.startsWith('access_token='))
           ?.split('=')[1]
         
-        console.log("Token found:", token ? "Yes" : "No")
-        console.log("Token value:", token ? token.substring(0, 20) + "..." : "None")
+        // console.log("Token found:", token ? "Yes" : "No")
+        // console.log("Token value:", token ? token.substring(0, 20) + "..." : "None")
         
         if (!token) {
           toast.error("Authentication failed", {
@@ -60,7 +60,7 @@ const SignIn = () => {
         
         // Login user in context
         const loginSuccess = login(token)
-        console.log("Login success:", loginSuccess)
+        // console.log("Login success:", loginSuccess)
         
         if (!loginSuccess) {
           toast.error("Authentication failed", {
@@ -72,10 +72,10 @@ const SignIn = () => {
         // Decode token and redirect
         try {
           const decodedUser = JSON.parse(atob(token.split('.')[1]))
-          console.log("Decoded user:", decodedUser)
+          // console.log("Decoded user:", decodedUser)
           
           const redirectPath = decodedUser.userType === 0 ? "/admin/donations" : "/volunteer/donate"
-          console.log("Redirecting to:", redirectPath)
+          // console.log("Redirecting to:", redirectPath)
           
           // Use push instead of replace for better navigation
           router.push(redirectPath)
@@ -83,7 +83,7 @@ const SignIn = () => {
           // Fallback redirect after a short delay
           setTimeout(() => {
             if (window.location.pathname === '/auth/login') {
-              console.log("Fallback redirect triggered")
+              // console.log("Fallback redirect triggered")
               window.location.href = redirectPath
             }
           }, 1000)

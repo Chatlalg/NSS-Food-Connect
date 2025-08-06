@@ -136,7 +136,7 @@ const handleLogin = asyncHandler(async (req, res) => {
     if (email === "admin@foodconnect.com") {
         if (password === process.env.ADMIN_PASSWORD) {
             const access_token = await admingenerateAccessToken();
-            console.log(access_token);
+            // console.log(access_token);
             const options = {
                 secure: process.env.NODE_ENV === "production",  // Use secure cookies in production
                 httpOnly: false,  // Allow JavaScript access for frontend
@@ -164,7 +164,7 @@ const handleLogin = asyncHandler(async (req, res) => {
 
     if (await user.matchPassword(password)) {
         const access_token = await user.generateAccessToken(1);
-        console.log(access_token);
+        // console.log(access_token);
         const options = {
             secure: process.env.NODE_ENV === "production",  // Secure in production
             httpOnly: false,  // Allow JavaScript access for frontend
