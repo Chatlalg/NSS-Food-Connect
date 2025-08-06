@@ -29,6 +29,7 @@ const getdonations = async(req, res) => {
             message : ["No Donations"]
         });
     }
+    // console.log(donations)
     res.status(200).json({
         success : true,
         message : ["data sent"],

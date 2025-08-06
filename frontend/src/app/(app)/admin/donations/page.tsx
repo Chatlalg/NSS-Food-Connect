@@ -5,6 +5,7 @@ import ActivityCard, { ActivityCardProps } from "@/components/admin-activity-car
 import foodImg from "@/../public/food2.png"
 import { adminAPI } from "@/lib/api"
 import DonationDetailModal from "@/components/donation-detail-modal"
+import { Separator } from "@/components/ui/separator"
 
 const Donations = () => {
   const [donations, setDonations] = useState<ActivityCardProps[]>([])
@@ -27,6 +28,7 @@ const Donations = () => {
           category: item.category,
           description: item.description,
           imgurl: item.imgurl,
+          status: item.status
         }))
         setDonations(mapped)
       } catch (err) {
@@ -41,7 +43,7 @@ const Donations = () => {
   return (
     <div className="w-full h-full px-4">
       <div className="w-full">
-        <h1 className="text-center text-3xl font-bold mb-5">Donations</h1>
+        <h1 className="text-center text-3xl font-bold mb-5 ">Pending Donations</h1>
       </div>
       {loading ? (
         <div className="text-center">Loading...</div>
@@ -51,6 +53,24 @@ const Donations = () => {
             <div className="col-span-3 text-center text-gray-500">No donations found</div>
           ) : (
             donations.map((item) => (
+              item.status==="pending" &&
+              <div key={item._id} onClick={() => setSelectedDonation(item)} className="cursor-pointer">
+                <ActivityCard {...item} />
+              </div>
+            ))
+          )}
+        </div>
+      )}
+      <h2 className="text-center text-3xl font-bold text-green-900">Completed Donations</h2>
+      {loading ? (
+        <div className="text-center">Loading...</div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-5 justify-items-center">
+          {donations.length === 0 ? (
+            <div className="col-span-3 text-center text-gray-500">No donations found</div>
+          ) : (
+            donations.map((item) => (
+              item.status!=="pending" &&
               <div key={item._id} onClick={() => setSelectedDonation(item)} className="cursor-pointer">
                 <ActivityCard {...item} />
               </div>

@@ -2,8 +2,9 @@ import { useState } from "react"
 import Image from "next/image"
 import { adminAPI } from "@/lib/api"
 import { toast } from "sonner"
+import { ActivityCardProps } from "./admin-activity-card"
 
-export default function DonationDetailModal({ donation, onClose }: { donation: any, onClose: () => void }) {
+export default function DonationDetailModal({ donation, onClose }: { donation: ActivityCardProps, onClose: () => void }) {
   const [showCredits, setShowCredits] = useState(false)
   const [credits, setCredits] = useState(0)
   const [loading, setLoading] = useState(false)
@@ -32,10 +33,10 @@ export default function DonationDetailModal({ donation, onClose }: { donation: a
     setLoading(true)
     setError("")
     try {
-      const response = await adminAPI.rejectDonation({ donationid: donation._id})
+      const response = await adminAPI.rejectDonation({ donationid: donation._id })
       if (response.statusText === "OK") {
         toast.message("Donation request rejected successfully", {
-          richColors:true
+          richColors: true
         })
         onClose()
       }
@@ -69,50 +70,60 @@ export default function DonationDetailModal({ donation, onClose }: { donation: a
           )}
         </div>
         {error && <div className="text-red-500 mt-2">{error}</div>}
-        {!showCredits ? (
-          <div className="flex gap-4 mt-6">
-            <button className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => setShowCredits(true)}>Approve</button>
-            <button className="bg-red-500 text-white px-4 py-2 rounded" onClick={handleReject}>Reject</button>
+        {
+          donation.status === "pending" &&
+          <div>
+            {!showCredits ? (
+              <div className="flex gap-4 mt-6">
+                <button className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => setShowCredits(true)}>Approve</button>
+                <button className="bg-red-500 text-white px-4 py-2 rounded" onClick={handleReject}>Reject</button>
+              </div>
+            ) : (
+              <div className="mt-2">
+                <label className="block mb-2 font-bold">Assign Credits</label>
+                <div className="flex gap-6 items-center pb-2">
+                  <input
+                    type="range"
+                    min={0}
+                    max={10}
+                    step={1}
+                    value={credits}
+                    onChange={e => setCredits(Number(e.target.value))}
+                    className="py-1 min-w-90 mb-2"
+                    disabled={loading}
+                    list="tickmarks"
+                  />
+                  <datalist id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                    <option value="6" label="6"></option>
+                    <option value="7" label="7"></option>
+                    <option value="8" label="8"></option>
+                    <option value="9" label="9"></option>
+                    <option value="10" label="10"></option>
+                  </datalist>
+                  <input type="text" disabled={true} value={credits} className="border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center" size={2} />
+                </div>
+                {
+                  donation.status !== "pending" && (
+                    <button
+                      className="bg-green-600 text-white px-4 py-2 rounded w-full"
+                      onClick={handleApprove}
+                      disabled={loading || credits <= 0}
+                    >
+                      {loading ? "Approving..." : "Approve"}
+                    </button>
+                  )
+                }
+
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="mt-2">
-            <label className="block mb-2 font-bold">Assign Credits</label>
-            <div className="flex gap-6 items-center pb-2">
-              <input
-                type="range"
-                min={0}
-                max={10}
-                step={1}
-                value={credits}
-                onChange={e => setCredits(Number(e.target.value))}
-                className="py-1 min-w-90 mb-2"
-                disabled={loading}
-                list="tickmarks"
-              />
-              <datalist id="tickmarks">
-                <option value="0" label="0"></option>
-                <option value="1" label="1"></option>
-                <option value="2" label="2"></option>
-                <option value="3" label="3"></option>
-                <option value="4" label="4"></option>
-                <option value="5" label="5"></option>
-                <option value="6"></option>
-                <option value="7"></option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-              </datalist>
-              <input type="text" disabled={true} value={credits} className="border-2 rounded-lg border-gray-400 bg-slate-200 font-semibold text-lg text-center" size={2} />
-            </div>
-            <button
-              className="bg-green-600 text-white px-4 py-2 rounded w-full"
-              onClick={handleApprove}
-              disabled={loading || credits <= 0}
-            >
-              {loading ? "Approving..." : "Approve"}
-            </button>
-          </div>
-        )}
+        }
       </div>
     </div>
   )

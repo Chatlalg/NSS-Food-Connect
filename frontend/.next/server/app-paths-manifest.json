@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "/(app)/volunteer/activities/page": "app/(app)/volunteer/activities/page.js",
   "/(app)/volunteer/donate/page": "app/(app)/volunteer/donate/page.js",
   "/(app)/volunteer/profile/page": "app/(app)/volunteer/profile/page.js",
@@ -7,4 +8,9 @@
   "/auth/register/page": "app/auth/register/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
+=======
+  "/(app)/admin/donations/page": "app/(app)/admin/donations/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+>>>>>>> 2a133abd85fec4b49bcd39445e1e1dc1ca6f722d
 }
