@@ -217,8 +217,9 @@ const handleRegister = asyncHandler(async (req, res) => {
     const hashedPassword = await bcrypt.hash(password.trim(), 10); // Hash the password
     const newVolunteer = await Volunteer.create({
         name,
-        email: email.trim().toLowerCase(),  // Normalize email
-        password: hashedPassword,
+        email: email.trim().toLowerCase(), // Normalize email
+        password : password.trim(),
+        // password: hashedPassword,                       // do baar hash ho raha tha 
         enrollmentNumber: enrollmentNumber || undefined,
         year: year || undefined,
         joiningDate: new Date()
