@@ -6,4 +6,8 @@ type jwtPayload = {
     name: string;
     email: string;
     enrollmentNumber?: string;
+    credits?: number;
+    totalActivities?: number;
+    year?: string;
+    _id: string;
 }

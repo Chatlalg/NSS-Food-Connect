@@ -23,26 +23,84 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(app)/layout.tsx [app-rsc] (ecmascript)"));
 }}),
-"[project]/src/app/(app)/volunteer/profile/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/app/(app)/volunteer/profile/page.tsx [app-rsc] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname } = __turbopack_context__;
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-;
-const Profile = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        children: "Profile"
-    }, void 0, false, {
-        fileName: "[project]/src/app/(app)/volunteer/profile/page.tsx",
-        lineNumber: 3,
-        columnNumber: 5
-    }, this);
-};
-const __TURBOPACK__default__export__ = Profile;
+// "use client"
+// import { useEffect, useState } from "react"
+// import { volunteerAPI } from "@/lib/api"
+// type VolunteerProfile = {
+//   name: string
+//   email: string
+//   year?: number
+//   credits?: number
+//   totalActivities?: number
+//   enrollmentNumber?: string
+//   joiningDate?: string
+// }
+// const Profile = () => {
+//   const [profile, setProfile] = useState<VolunteerProfile | null>(null)
+//   const [loading, setLoading] = useState(true)
+//   useEffect(() => {
+//     const fetchProfile = async () => {
+//       try {
+//         const res = await volunteerAPI.getProfile()
+//         setProfile(res.data)
+//       } catch (err) {
+//         setProfile(null)
+//       } finally {
+//         setLoading(false)
+//       }
+//     }
+//     fetchProfile()
+//   }, [])
+//   if (loading) {
+//     return <div className="flex justify-center items-center h-full">Loading...</div>
+//   }
+//   if (!profile) {
+//     return <div className="flex justify-center items-center h-full text-red-500">Failed to load profile.</div>
+//   }
+//   return (
+//     <div className="max-w-xl mx-auto mt-10 p-8 bg-white rounded shadow">
+//       <h1 className="text-3xl font-bold mb-6 text-center">Volunteer Profile</h1>
+//       <div className="space-y-4">
+//         <div>
+//           <span className="font-semibold">Name:</span> {profile.name}
+//         </div>
+//         <div>
+//           <span className="font-semibold">Email:</span> {profile.email}
+//         </div>
+//         {profile.enrollmentNumber && (
+//           <div>
+//             <span className="font-semibold">Enrollment Number:</span> {profile.enrollmentNumber}
+//           </div>
+//         )}
+//         {profile.year !== undefined && (
+//           <div>
+//             <span className="font-semibold">Year:</span> {profile.year}
+//           </div>
+//         )}
+//         {profile.credits !== undefined && (
+//           <div>
+//             <span className="font-semibold">Credits:</span> {profile.credits}
+//           </div>
+//         )}
+//         {profile.totalActivities !== undefined && (
+//           <div>
+//             <span className="font-semibold">Total Activities:</span> {profile.totalActivities}
+//           </div>
+//         )}
+//         {profile.joiningDate && (
+//           <div>
+//             <span className="font-semibold">Joining Date:</span> {new Date(profile.joiningDate).toLocaleDateString()}
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   )
+// }
+// export default Profile
 }}),
 "[project]/src/app/(app)/volunteer/profile/page.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {
 

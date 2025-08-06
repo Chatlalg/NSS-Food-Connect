@@ -185,7 +185,7 @@ const handleLogin = asyncHandler(async (req, res) => {
 // Register complete
 const handleRegister = asyncHandler(async (req, res) => {
     const { name, email, password, enrollmentNumber, year } = req.body;
-
+    console.log(req.body);
     if (!email) {
         return res.status(400).json({
                 success : false,

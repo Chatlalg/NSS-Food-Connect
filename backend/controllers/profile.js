@@ -5,6 +5,8 @@ const getProfile = asyncHandler(async (req, res) => {
     const volunteerId = req.user._id;
     
     const volunteer = await Volunteer.findById(volunteerId).select('-password');
+    console.log(volunteer);
+    
     
     if (!volunteer) {
         return res.status(404).json({

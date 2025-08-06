@@ -62,6 +62,10 @@ VolunteerSchema.methods.generateAccessToken = async function (userRole) {
         userType: userRole,
         name: this.name,
         email: this.email,
+        credits: this.credits,
+        totalActivities: this.totalActivities,
+        year: this.year,
+        enrollmentNumber: this.enrollmentNumber
     };
     return jwt.sign(
         payload, 

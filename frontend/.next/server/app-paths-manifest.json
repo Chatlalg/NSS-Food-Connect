@@ -1,9 +1,10 @@
 {
-<<<<<<< HEAD
+  "/(app)/volunteer/activities/page": "app/(app)/volunteer/activities/page.js",
+  "/(app)/volunteer/donate/page": "app/(app)/volunteer/donate/page.js",
+  "/(app)/volunteer/profile/page": "app/(app)/volunteer/profile/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/auth/register/page": "app/auth/register/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
-=======
-  "/(app)/admin/donations/page": "app/(app)/admin/donations/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
->>>>>>> 3df950a6ecd881b2ec975c4a31737bbe3557d997
 }

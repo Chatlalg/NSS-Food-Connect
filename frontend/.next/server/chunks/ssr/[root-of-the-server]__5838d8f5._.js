@@ -187,11 +187,13 @@ const authAPI = {
         });
         return response.data;
     },
-    register: async (name, email, password)=>{
+    register: async (name, email, password, enrollmentNumber, year)=>{
         const response = await api.post('/auth/register', {
             name,
             email,
-            password
+            password,
+            enrollmentNumber,
+            year
         });
         return response.data;
     },

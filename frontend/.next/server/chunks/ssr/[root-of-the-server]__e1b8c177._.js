@@ -1090,32 +1090,73 @@ function SidebarMenuSubButton({ asChild = false, size = "md", isActive = false, 
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// const adminItems: SidebarItem[] = [
+//     {
+//         title: "Donations",
+//         url: "/admin/donations"
+//     },
+//     {
+//         title: "Volunteers",
+//         url: "/admin/volunteers"
+//     },
+// ]
+// const volunteerItems: SidebarItem[] = [
+//     {
+//         title: "Activities",
+//         url: "/volunteer/activities"
+//     },
+//     {
+//         title: "Donate",
+//         url: "/volunteer/donate"
+//     },
+//     {
+//         title: "Profile",
+//         url: "/volunteer/profile"
+//     },
+// ]
+// export { adminItems, volunteerItems }
 __turbopack_context__.s({
     "adminItems": (()=>adminItems),
     "volunteerItems": (()=>volunteerItems)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/package.js [app-ssr] (ecmascript) <export default as Package>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-ssr] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$history$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__History$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/history.js [app-ssr] (ecmascript) <export default as History>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hand$2d$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__HandHeart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/hand-heart.js [app-ssr] (ecmascript) <export default as HandHeart>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-user.js [app-ssr] (ecmascript) <export default as UserCircle>");
+;
 const adminItems = [
     {
         title: "Donations",
-        url: "/admin/donations"
+        url: "/admin/donations",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__ // Icon for Donations
+        ["Package"]
     },
     {
         title: "Volunteers",
-        url: "/admin/volunteers"
+        url: "/admin/volunteers",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ // Icon for Volunteers
+        ["Users"]
     }
 ];
 const volunteerItems = [
     {
         title: "Activities",
-        url: "/volunteer/activities"
+        url: "/volunteer/activities",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$history$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__History$3e$__ // Icon for Activities
+        ["History"]
     },
     {
         title: "Donate",
-        url: "/volunteer/donate"
+        url: "/volunteer/donate",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hand$2d$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__HandHeart$3e$__ // Icon for Donate
+        ["HandHeart"]
     },
     {
         title: "Profile",
-        url: "/volunteer/profile"
+        url: "/volunteer/profile",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle$3e$__ // Icon for Profile
+        ["UserCircle"]
     }
 ];
 ;
@@ -1443,6 +1484,31 @@ const __TURBOPACK__default__export__ = ProtectedRoute;
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// 'use client'
+// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+// import { AppSidebar } from "@/components/app-sidebar"
+// import { Button } from "@/components/ui/button"
+// import { Menu } from "lucide-react"
+// import ProtectedRoute from "@/components/ProtectedRoute"
+// export default function DashboardLayout({
+//     children,
+// }: {
+//     children: React.ReactNode
+// }) {
+//     return (
+//         <ProtectedRoute>
+//             <div>
+//                 <SidebarProvider defaultOpen={false}>
+//                     <AppSidebar />
+//                     <main className="w-full">
+//                         <SidebarTrigger />
+//                         {children}
+//                     </main>
+//                 </SidebarProvider>
+//             </div>
+//         </ProtectedRoute>
+//     )
+// }
 __turbopack_context__.s({
     "default": (()=>DashboardLayout)
 });
@@ -1463,7 +1529,7 @@ function DashboardLayout({ children }) {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$app$2d$sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AppSidebar"], {}, void 0, false, {
                         fileName: "[project]/src/app/(app)/layout.tsx",
-                        lineNumber: 17,
+                        lineNumber: 44,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1471,30 +1537,30 @@ function DashboardLayout({ children }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SidebarTrigger"], {}, void 0, false, {
                                 fileName: "[project]/src/app/(app)/layout.tsx",
-                                lineNumber: 19,
+                                lineNumber: 46,
                                 columnNumber: 25
                             }, this),
                             children
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/(app)/layout.tsx",
-                        lineNumber: 18,
+                        lineNumber: 45,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(app)/layout.tsx",
-                lineNumber: 16,
+                lineNumber: 43,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/(app)/layout.tsx",
-            lineNumber: 15,
+            lineNumber: 42,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/(app)/layout.tsx",
-        lineNumber: 14,
+        lineNumber: 41,
         columnNumber: 9
     }, this);
 }

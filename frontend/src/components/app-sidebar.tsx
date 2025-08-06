@@ -48,7 +48,7 @@ export function AppSidebar() {
                                 {
                                     user?.userType === 1 ? <>
                                         <h1 className="text-3xl text-center font-bold">{user?.name || "user"}</h1>
-                                        <p className="text-center text-lg">Total credits : 100 </p>
+                                        <p className="text-center text-lg">Total credits : {user?.credits} </p>
                                     </> : <h1 className="text-3xl text-center font-bold">Admin</h1>
                                 }
                             </SidebarMenuItem>
