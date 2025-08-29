@@ -1,7 +1,6 @@
-import Image from "next/image";
+'use client'
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div>Hello NSS</div>
-  );
+  redirect("/auth/login")
 }
